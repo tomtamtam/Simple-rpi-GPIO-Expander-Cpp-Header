@@ -1,0 +1,52 @@
+{
+  "board_count": 4,
+  "boards": [
+    {
+      "address": "0x24",
+      "a": {
+        "values": [true, true, true, true, true, true, true, true],
+        "types": [true, true, true, true, true, true, true, true]
+      },
+      "b": {
+        "values": [true, true, true, true, true, true, true, true],
+        "types": [true, true, true, true, true, true, true, true]
+      }
+    },
+
+    {
+      "address": "0x25",
+      "a": {
+        "values": [false, false, false, false, false, false, false, false],
+        "types": [true, true, true, true, true, true, true, true]
+      },
+      "b": {
+        "values": [false, false, false, false, false, false, false, false],
+        "types": [true, true, true, true, true, true, true, true]
+      }
+    },
+
+    {
+      "address": "0x26",
+      "a": {
+        "values": [false, false, false, false, false, false, false, false],
+        "types": [false, false, false, false, false, false, false, false]
+      },
+      "b": {
+        "values": [false, false, false, false, false, false, false, false],
+        "types": [false, false, false, false, false, false, false, false]
+      }
+    },
+
+    {
+      "address": "0x27",
+      "a": {
+        "values": [false, false, false, false, false, false, false, false],
+        "types": [false, false, false, false, false, false, false, false]
+      },
+      "b": {
+        "values": [false, false, false, false, false, false, false, false],
+        "types": [false, false, false, false, false, false, false, false]
+      }
+    }
+  ]
+}
