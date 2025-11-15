@@ -63,9 +63,13 @@ With the two functions setPin and readPin you are able to communicate with the b
         -idx 1: returns the read value
 ## Build
 ### Script
-there is a build and run script, wich requires make.
+there is a build and run script, wich requires make:
+```bash
+chmod +x build_run.sh
+./build_run.sh
+```
 ### make through the makefile
-if you want to use make, make shure it's installed, and run it.
+if you want to use make, make shure it's installed, and run it:
 
 ```bash
 mkdir -p bin
