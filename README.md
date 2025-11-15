@@ -1,5 +1,5 @@
 
-# Simple RaspberryPI GPIO Expander Lib
+# Simple RaspberryPI GPIO Expander Header File
 
 Is a c++ header file to controll and setup I2C expander boards for raspberry pi's, such as boards like MCP23017 / MCP23008. Automaticly storing the current state. All the setup process is modular managed through a json file without recompiling.
 
