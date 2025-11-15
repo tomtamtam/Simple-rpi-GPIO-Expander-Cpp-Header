@@ -8,6 +8,7 @@ Is a c++ header file to controll and setup I2C expander boards for raspberry pi'
 ## Dependencies
 - [wiringpi](https://github.com/WiringPi/WiringPi.git)
 - [nlohmann/json](https://github.com/nlohmann/json.git)
+- [make](https://github.com/wkusnierczyk/make.git)
 
 ## Setup
 ### RaspberryPI
@@ -60,3 +61,27 @@ With the two functions setPin and readPin you are able to communicate with the b
     - std::array<bool, 2>
         - idx 0: indicator if failed (failed = false)
         -idx 1: returns the read value
+## Build
+### Script
+there is a build and run script, wich requires make.
+### make through the makefile
+if you want to use make, make shure it's installed, and run it.
+
+```bash
+mkdir -p bin
+make clean
+make
+./bin/app
+```
+
+### Compiler
+- g++:
+```bash
+mkdir -p bin
+g++ -Wall -O2 src/main.cpp src/json/json.cpp src/gpio/gpio.cpp -o bin/app -lwiringPi
+```
+- clang:
+```bash
+mkdir -p bin
+clang++ -Wall -O2 src/main.cpp src/json/json.cpp src/gpio/gpio.cpp -o bin/app -lwiringPi
+```
