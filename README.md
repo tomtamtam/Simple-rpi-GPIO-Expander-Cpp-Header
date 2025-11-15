@@ -2,6 +2,7 @@
 # Simple RaspberryPI GPIO Expander Lib
 
 Is a c++ header file to controll and setup I2C expander boards for raspberry pi's, such as boards like MCP23017 / MCP23008. Automaticly storing the current state.
+![expander](gpio-expander.png)
 
 ## Dependencies
 - [wiringpi](https://github.com/WiringPi/WiringPi.git)
