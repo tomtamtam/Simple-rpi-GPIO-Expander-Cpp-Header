@@ -38,15 +38,6 @@ void Gpio::init(const Info& info)
         }
     }
 
-    Gpio::setPin(info, PinPosition(0, true, 0), LOW);
-    Gpio::setPin(info, PinPosition(0, true, 1), HIGH);
-
-    std::cout << "pausing\n";
-    delay(50000);
-
-    Gpio::setPin(info, PinPosition(0, true, 1), LOW);
-    Gpio::setPin(info, PinPosition(0, true, 0), HIGH);
-
     std::cout << "finished\n";
 }
 
