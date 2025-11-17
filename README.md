@@ -68,7 +68,7 @@ std::array<bool, 2> pin = Gpio::readPin(Gpio::PinPosition(0, Gpio::BOARD_A, 0), 
 ##### Return type
     - std::array<bool, 2>
         - idx 0: indicator if failed (failed = false)
-        -idx 1: returns the read value
+        - idx 1: returns the read value
 ## Build
 ### Script
 there is a build and run script, wich requires make:
