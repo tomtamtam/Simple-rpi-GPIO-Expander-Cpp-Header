@@ -51,6 +51,9 @@ With the two functions setPin and readPin you are able to communicate with the b
     - bool value (HIGH / LOW)
 ##### Return type
     - bool (to indicate if it failed (false = failed))
+```c++
+Gpio::setPin(Gpio::PinPosition(0, , 0), info);
+```
 
 #### read()
 ##### Parameters:
