@@ -52,13 +52,16 @@ With the two functions setPin and readPin you are able to communicate with the b
 ##### Return type
     - bool (to indicate if it failed (false = failed))
 ```c++
-Gpio::setPin(Gpio::PinPosition(0, , 0), info);
+Gpio::setPin(Gpio::PinPosition(0, Gpio::BOARD_A, 0), info);
 ```
 
-#### read()
+#### readPin()
 ##### Parameters:
     - PinPosition position (is a struct to locate a pin by the board idx, a bool to indicate the port and a idx to locate the port local pin)
     - Info &info (to automaticly sync the update)
+```c++
+bool pin = Gpio::readPin(Gpio::PinPosition(0, Gpio::BOARD_A, 0), info);
+```
 
 ##### Return type
     - std::array<bool, 2>
