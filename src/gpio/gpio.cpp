@@ -6,7 +6,7 @@
 #include "gpio.h"
 #include "../json/json.h"
 
-using namespace Gpio;
+using namespace Gpio
 
 void Gpio::init(const Info& info)
 {
