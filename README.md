@@ -56,12 +56,13 @@ Gpio::setPin(Gpio::PinPosition(0, Gpio::BOARD_A, 0), info);
 ```
 
 #### readPin()
+```c++
+std::array<bool, 2> pin = Gpio::readPin(Gpio::PinPosition(0, Gpio::BOARD_A, 0), info);
+```
 ##### Parameters:
     - PinPosition position (is a struct to locate a pin by the board idx, a bool to indicate the port and a idx to locate the port local pin)
     - Info &info (to automaticly sync the update)
-```c++
-bool pin = Gpio::readPin(Gpio::PinPosition(0, Gpio::BOARD_A, 0), info);
-```
+
 
 ##### Return type
     - std::array<bool, 2>
