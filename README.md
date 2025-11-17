@@ -45,15 +45,16 @@ The Info struct stores a count var and a vector of Boards wich is a struct inclu
 With the two functions setPin and readPin you are able to communicate with the boards
 
 #### setPin()
+```c++
+Gpio::setPin(Gpio::PinPosition(0, Gpio::BOARD_A, 0), info);
+```
 ##### Parameters:
     - PinPosition position (is a struct to locate a pin by the board idx, a bool to indicate the port and a idx to locate the port local pin)
     - Info &info (to automaticly sync the update)
     - bool value (HIGH / LOW)
 ##### Return type
     - bool (to indicate if it failed (false = failed))
-```c++
-Gpio::setPin(Gpio::PinPosition(0, Gpio::BOARD_A, 0), info);
-```
+
 
 #### readPin()
 ```c++
