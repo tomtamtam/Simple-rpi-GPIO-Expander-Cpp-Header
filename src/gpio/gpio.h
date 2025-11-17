@@ -6,6 +6,9 @@
 
 namespace Gpio
 {
+    const bool BOARD_A = true;
+    const bool BOARD_B = false;
+
     struct Pin
     {
         bool type;
